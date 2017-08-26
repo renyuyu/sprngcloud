@@ -1,0 +1,13 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: eureka-server
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 10
+    hostname: eurekaserver2
+  client:
+    service-url:
+      defaultZone: http://eurekaserver1:9001/eureka
